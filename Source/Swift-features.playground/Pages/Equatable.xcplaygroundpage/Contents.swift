@@ -2,6 +2,7 @@
 import Foundation
 
 //Reference: https://developer.apple.com/documentation/swift/equatable
+//Details: https://github.com/apple/swift-evolution/blob/master/proposals/0185-synthesize-equatable-hashable.md
 
 //Enum
 //For an enum, all its associated values must conform to Equatable.
