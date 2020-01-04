@@ -38,4 +38,30 @@ default:
     print("bla bla default implementation. i.e return,break,fatalError etc")
 }
 
+
+
+//`Result` has an initializer that accepts a throwing closure: if the closure returns a value successfully that gets used for the `success` case, otherwise the thrown error is  placed into the `failure` case.
+
+//Example:
+enum ValidationError: Error {
+    case noValidName
+}
+struct User {
+    let name: String
+}
+
+func createUser(name: String) throws -> User {
+    guard name.count > 0 else {
+        throw ValidationError.noValidName
+    }
+
+    return User(name: name)
+}
+
+let validUser = Result { try createUser(name: "Valid Name") }
+print(validUser)
+
+let inValidNameUser = Result { try createUser(name: "") }
+print(inValidNameUser)
+
 //: [Next](@next)
