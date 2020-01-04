@@ -4,5 +4,6 @@
         <page name='Equatable'/>
         <page name='Result'/>
         <page name='ImplicitReturn'/>
+        <page name='isMultiple'/>
     </pages>
 </playground>
