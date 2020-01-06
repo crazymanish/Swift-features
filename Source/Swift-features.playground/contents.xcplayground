@@ -8,5 +8,6 @@
         <page name='KeyValuePairs'/>
         <page name='PropertyWrapper'/>
         <page name='ToggleBool'/>
+        <page name='MemberwiseInitializer'/>
     </pages>
 </playground>
