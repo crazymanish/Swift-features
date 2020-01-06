@@ -10,5 +10,6 @@
         <page name='ToggleBool'/>
         <page name='MemberwiseInitializer'/>
         <page name='OpaqueResultTypes'/>
+        <page name='Never'/>
     </pages>
 </playground>
