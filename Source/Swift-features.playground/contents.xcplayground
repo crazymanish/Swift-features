@@ -9,5 +9,6 @@
         <page name='PropertyWrapper'/>
         <page name='ToggleBool'/>
         <page name='MemberwiseInitializer'/>
+        <page name='OpaqueResultTypes'/>
     </pages>
 </playground>
