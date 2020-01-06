@@ -6,5 +6,6 @@
         <page name='ImplicitReturn'/>
         <page name='isMultiple'/>
         <page name='KeyValuePairs'/>
+        <page name='PropertyWrapper'/>
     </pages>
 </playground>
