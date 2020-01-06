@@ -7,5 +7,6 @@
         <page name='isMultiple'/>
         <page name='KeyValuePairs'/>
         <page name='PropertyWrapper'/>
+        <page name='ToggleBool'/>
     </pages>
 </playground>
