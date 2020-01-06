@@ -11,5 +11,6 @@
         <page name='MemberwiseInitializer'/>
         <page name='OpaqueResultTypes'/>
         <page name='Never'/>
+        <page name='DynamicallyCallableTypes'/>
     </pages>
 </playground>
