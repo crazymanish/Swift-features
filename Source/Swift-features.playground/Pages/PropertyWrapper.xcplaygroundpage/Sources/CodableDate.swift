@@ -1,15 +1,13 @@
 import Foundation
 
 public protocol CodableDateStrategy {
-    associatedtype RawValue: Codable
-
-    static func decode(_ value: RawValue) throws -> Date
-    static func encode(_ date: Date) -> RawValue
+    static func decode(_ value: String) throws -> Date
+    static func encode(_ date: Date) -> String
 }
 
 @propertyWrapper
 public struct CodableDate<DateStrategy: CodableDateStrategy>: Codable {
-    private let value: DateStrategy.RawValue
+    private let value: String
     public var wrappedValue: Date
 
     public init(wrappedValue: Date) {
@@ -18,7 +16,9 @@ public struct CodableDate<DateStrategy: CodableDateStrategy>: Codable {
     }
 
     public init(from decoder: Decoder) throws {
-        self.value = try DateStrategy.RawValue(from: decoder)
+        let container = try decoder.singleValueContainer()
+        self.value = try container.decode(String.self)
+
         self.wrappedValue = try DateStrategy.decode(value)
     }
 

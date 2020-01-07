@@ -8,7 +8,7 @@ let json = """
 "name":"Manish Rathi",
 "country":"INDIA",
 "dob":"1992-03-01",
-"updated":"2019-11-26T16:39:57-08:00",
+"updated":"2019-11-26T16:39:57+00:00",
 }
 """
 
@@ -17,9 +17,9 @@ struct User: Codable {
     let country: String
 
     @CodableDate<YYYYMMDDDateStrategy>
-    var dob: Date //property wrapper can only be applied to a 'var'
+    var dob: Date //Note: property wrapper can only be applied to a 'var'
 
-    @CodableDate<ISO8601Strategy>
+    @CodableDate<ISO8601DateStrategy>
     var updated: Date
 }
 
