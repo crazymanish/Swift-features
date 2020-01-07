@@ -50,4 +50,6 @@ func == (lhs: FilterViewModel, rhs: FilterViewModel) -> Bool {
 let filterViewModel = FilterViewModel()
 print(filterViewModel == filterViewModel)
 
+// YES
+
 //: [Next](@next)

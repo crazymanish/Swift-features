@@ -59,9 +59,13 @@ func createUser(name: String) throws -> User {
 }
 
 let validUser = Result { try createUser(name: "Valid Name") }
+//Result<User, ValidationError>
 print(validUser)
 
 let inValidNameUser = Result { try createUser(name: "") }
-print(inValidNameUser)
+//Result<User, ValidationError>
+print(try inValidNameUser.get())
+
+//NO
 
 //: [Next](@next)

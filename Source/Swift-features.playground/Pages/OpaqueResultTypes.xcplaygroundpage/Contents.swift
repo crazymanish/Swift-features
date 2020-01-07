@@ -6,4 +6,7 @@ import Foundation
 
 //Rules: https://github.com/apple/swift-evolution/blob/master/proposals/0244-opaque-result-types.md#implementing-a-function-returning-an-opaque-type
 
+// check iOS13 only?
+// YES
+
 //: [Next](@next)

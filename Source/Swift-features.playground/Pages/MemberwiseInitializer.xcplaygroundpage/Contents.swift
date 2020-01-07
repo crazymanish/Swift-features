@@ -5,6 +5,8 @@ import Foundation
 //Details: https://github.com/apple/swift-evolution/blob/master/proposals/0242-default-values-memberwise.md
 
 //Limitation: Access Control -> 'internal' always
-//let sparky = Dog(age: 2, name: "sparky")
+//let sparky = Dog(name: "sparky")
+
+
 
 //: [Next](@next)

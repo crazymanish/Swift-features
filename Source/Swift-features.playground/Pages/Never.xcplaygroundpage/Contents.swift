@@ -18,4 +18,6 @@ alwaysSucceeds { (result) in
     }
 }
 
+// NO (Not able to found use-case)
+
 //: [Next](@next)

@@ -23,4 +23,6 @@ for value in singer {
     print("\(value.key) is set to \(value.value)")
 }
 
+// NO
+
 //: [Next](@next)

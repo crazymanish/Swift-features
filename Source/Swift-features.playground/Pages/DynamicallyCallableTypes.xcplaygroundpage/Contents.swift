@@ -22,6 +22,10 @@ class DynamicFeatures {
 
 let features = DynamicFeatures()
 features(3, 4, 5) // 12
+
 features(first: 3, 4, second: 5) // 8
+
+
+// NO
 
 //: [Next](@next)
